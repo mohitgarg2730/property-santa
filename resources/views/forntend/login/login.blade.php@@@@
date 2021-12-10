@@ -1,0 +1,41 @@
+@extends('forntend.layouts.index')
+
+
+@section('content')
+    <div class="bg-white-100 flex flex-col w-100 h-100 mainbody">
+        <!-- header start -->
+  
+            <!-- <div class="flex justify-end  w-1/12">
+                <a href="#" class="cursor-pointer">
+                    <img class="h-12 w-10" src="{{url('images/app/profile.png')}}" alt="">
+                </a>
+            </div> -->
+        </div>
+        <!-- header end -->
+
+
+        <div class="flex justify-center items-center w-full h-100 mt-20">
+            <div class="w-9/12 mt-10 rounded-lg shadow-xl flex justify-between">
+                <div class="w-1/2  custom_bg rounded-tl-lg rounded-bl-lg">
+                </div>
+                <div class="w-1/2 flex flex-col justify-center items-center py-12 ">
+                    <h1 class="nexa_bold text-4xl text-purple-600">Login to see your rates</h1>
+                    <div class="mt-8 flex flex-col justify-center items-center">
+                        <form method="POST" action="{{ url('forntendLofinVerify') }}">
+                            @csrf
+                        <input type="email"  name="email" placeholder="" class="border border-purple-700 rounded-lg p-2 w-72">
+                        <input type="Password" name="password" placeholder="" class="mt-2 border border-purple-700 rounded-lg p-2 w-72">
+                        <button
+                            class="nexa_bold text-base border bg-purple-700 text-white rounded-lg p-2 w-72 mt-2 text-center">Continue</button>
+                        <h3 class="poppins_mediam text-sm mt-1">Already have an account ? <a href="#"
+                                class="poppins_bold text-purple-700 underline">SignIn</a></h3>
+                        </form>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+@stop
