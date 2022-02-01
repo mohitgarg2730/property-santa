@@ -12,6 +12,7 @@ use App\Http\Controllers\Forntend\BookedCallController;
 use App\Http\Controllers\Forntend\TestController;
 use App\Models\inquiryee;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
