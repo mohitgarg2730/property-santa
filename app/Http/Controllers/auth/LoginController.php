@@ -13,7 +13,7 @@ class LoginController extends Controller
     public function adminLogin()
     {
         return view('login');
-// sdzsdszdas
+// test
     }
     public function  forntendSignup (Request $request)
     {
